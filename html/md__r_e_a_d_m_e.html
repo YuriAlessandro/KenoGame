@@ -1,0 +1,116 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.10"/>
+<title>Keno Game: Keno Game</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<script type="text/javascript">
+  $(document).ready(function() { init_search(); });
+</script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">Keno Game
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Gerado por Doxygen 1.8.10 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search",false,'Localizar');
+</script>
+  <div id="navrow1" class="tabs">
+    <ul class="tablist">
+      <li><a href="index.html"><span>Página&#160;principal</span></a></li>
+      <li class="current"><a href="pages.html"><span>Páginas&#160;relacionadas</span></a></li>
+      <li><a href="annotated.html"><span>Classes</span></a></li>
+      <li><a href="files.html"><span>Ficheiros</span></a></li>
+      <li>
+        <div id="MSearchBox" class="MSearchBoxInactive">
+        <span class="left">
+          <img id="MSearchSelect" src="search/mag_sel.png"
+               onmouseover="return searchBox.OnSearchSelectShow()"
+               onmouseout="return searchBox.OnSearchSelectHide()"
+               alt=""/>
+          <input type="text" id="MSearchField" value="Localizar" accesskey="S"
+               onfocus="searchBox.OnSearchFieldFocus(true)" 
+               onblur="searchBox.OnSearchFieldFocus(false)" 
+               onkeyup="searchBox.OnSearchFieldChange(event)"/>
+          </span><span class="right">
+            <a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()"><img id="MSearchCloseImg" border="0" src="search/close.png" alt=""/></a>
+          </span>
+        </div>
+      </li>
+    </ul>
+  </div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+</div><!-- top -->
+<div class="header">
+  <div class="headertitle">
+<div class="title">Keno Game </div>  </div>
+</div><!--header-->
+<div class="contents">
+<div class="textblock"><p>Bem vindo ao Keno.</p>
+<p>O Keno é um jogo de azar composto por uma tabela com 80 valores, no qual o jogador deve escolher até 15 números, entre 1 e 80. O jogo então sorteia 20 valores da tabela. Dependendo da quantidade de acertos, o jogador pode faturar um prêmio, ou perder o dinheiro apostado.</p>
+<h2>Como jogar (Linux)</h2>
+<p>Para jogar a partir desse programa é simples: Você deverá criar um arquivo num formato qualquer (exemplo: myfile.txt) dentro da pasta data com a seguinte estrutura:</p>
+<div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;DINHEIRO INICIAL</div>
+<div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;RODADAS A SEREM JOGADAS</div>
+<div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;VALORES APOSTADOS</div>
+</div><!-- fragment --><p> Um exemplo:</p>
+<div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;1500</div>
+<div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;3</div>
+<div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;52 12 60</div>
+</div><!-- fragment --><p>Após salvar o arquivo (na pasta data), você deverá executar o programa em seu terminal da seguinte maneira:</p>
+<div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;./[Nome do executável] [Nome do arquivo]</div>
+</div><!-- fragment --><p>Um exemplo:</p>
+<div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;./KenoGame myfile.txt</div>
+</div><!-- fragment --><p>O jogo então será executado, e você poderá conferir como se saiu.</p>
+<h4>Dúvidas?</h4>
+<p>Caso esteja com dúvidas, apenas execute o programa sem nenhum argumento no seu terminal e um modo padrão será jogado, assim você pode se familiarizar com a interface e a mecânica do jogo.</p>
+<h2>Detalhes</h2>
+<p>Este jogo foi desenvolvido em C++11. Para compilar, faça:</p>
+<div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;g++ -Wall -std=c++11 -I include/ src/keno_main.cpp src/functions.cpp src/classes.cpp -o bin/[nome do arquivo]</div>
+</div><!-- fragment --><h2>Autores</h2>
+<p>Jogo criador por:</p>
+<div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;* Gustavo Araújo Carvalho</div>
+<div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;* Yuri Alessandro Martins</div>
+</div><!-- fragment --><p>Realizado como proposta da disciplina de Linguagem de Programação, do curso de Bacharelado em Tecnologia da Informação da UFRN. </p>
+</div></div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+Gerado por &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
+</a> 1.8.10
+</small></address>
+</body>
+</html>
