@@ -52,6 +52,9 @@ Este jogo foi desenvolvido em C++11. Para compilar, faça:
     g++ -Wall -std=c++11 -I include/ src/keno_main.cpp src/functions.cpp src/classes.cpp -o bin/[nome do arquivo]
 ``` 
 
+## Documentação
+A documentação completa desse programa pode ser encontrada em 'html/index.html' 
+
 ## Autores
 Jogo criador por:
 
