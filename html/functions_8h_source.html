@@ -1,0 +1,131 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.10"/>
+<title>Keno Game: Código-Fonte de include/functions.h</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<script type="text/javascript">
+  $(document).ready(function() { init_search(); });
+</script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">Keno Game
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Gerado por Doxygen 1.8.10 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search",false,'Localizar');
+</script>
+  <div id="navrow1" class="tabs">
+    <ul class="tablist">
+      <li><a href="index.html"><span>Página&#160;principal</span></a></li>
+      <li><a href="pages.html"><span>Páginas&#160;relacionadas</span></a></li>
+      <li><a href="annotated.html"><span>Classes</span></a></li>
+      <li class="current"><a href="files.html"><span>Ficheiros</span></a></li>
+      <li>
+        <div id="MSearchBox" class="MSearchBoxInactive">
+        <span class="left">
+          <img id="MSearchSelect" src="search/mag_sel.png"
+               onmouseover="return searchBox.OnSearchSelectShow()"
+               onmouseout="return searchBox.OnSearchSelectHide()"
+               alt=""/>
+          <input type="text" id="MSearchField" value="Localizar" accesskey="S"
+               onfocus="searchBox.OnSearchFieldFocus(true)" 
+               onblur="searchBox.OnSearchFieldFocus(false)" 
+               onkeyup="searchBox.OnSearchFieldChange(event)"/>
+          </span><span class="right">
+            <a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()"><img id="MSearchCloseImg" border="0" src="search/close.png" alt=""/></a>
+          </span>
+        </div>
+      </li>
+    </ul>
+  </div>
+  <div id="navrow2" class="tabs2">
+    <ul class="tablist">
+      <li><a href="files.html"><span>Lista&#160;de&#160;ficheiros</span></a></li>
+      <li><a href="globals.html"><span>Membros&#160;dos&#160;Ficheiros</span></a></li>
+    </ul>
+  </div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="dir_d44c64559bbebec7f509842c48db8b23.html">include</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="headertitle">
+<div class="title">functions.h</div>  </div>
+</div><!--header-->
+<div class="contents">
+<a href="functions_8h.html">Ir para a documentação deste ficheiro.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="preprocessor">#ifndef FUNCTIONS_H</span></div>
+<div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="preprocessor">#define FUNCTIONS_H</span></div>
+<div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;</div>
+<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;<span class="preprocessor">#include &lt;iostream&gt;</span></div>
+<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;<span class="preprocessor">#include &lt;vector&gt;</span></div>
+<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;<span class="preprocessor">#include &lt;algorithm&gt;</span></div>
+<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;<span class="preprocessor">#include &lt;iomanip&gt;</span></div>
+<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;<span class="preprocessor">#include &lt;ctime&gt;</span></div>
+<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;<span class="preprocessor">#include &lt;cctype&gt;</span></div>
+<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="classes_8h.html">classes.h</a>&quot;</span></div>
+<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;</div>
+<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;</div>
+<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;<span class="keywordtype">int</span> <a class="code" href="functions_8h.html#a4a7ce74c324bb8fb10f2de7825e4f582">seed</a> ( <span class="keywordtype">int</span> i );</div>
+<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;</div>
+<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;<span class="keywordtype">bool</span> <a class="code" href="functions_8h.html#aa4996d744d9318c2a71467641b7dae20">areAllNumbers</a> ( std::string str );</div>
+<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;</div>
+<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;<span class="keywordtype">void</span> <a class="code" href="functions_8h.html#a58b93f6e7f2214da9ad86a69bf27fdc3">quicksort</a>( std::vector&lt;int&gt;&amp; V, <span class="keywordtype">int</span> left, <span class="keywordtype">int</span> right );</div>
+<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;</div>
+<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;<span class="keywordtype">void</span> <a class="code" href="functions_8h.html#a19ca94df7a3930e28bb7d62b9d985cb2">interface</a>( <a class="code" href="class_keno_bet.html">KenoBet</a> player, std::vector&lt; std::vector&lt; double &gt; &gt; <a class="code" href="keno__main_8cpp.html#a1ee5a9f51d4409ab3968ebd9aa662638">prizes</a> );</div>
+<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;</div>
+<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;<span class="keywordtype">void</span> <a class="code" href="functions_8h.html#a1abb6c23f3fae207a3cfd02fbf255823">game</a>( <a class="code" href="class_keno_bet.html">KenoBet</a> player, std::vector&lt; std::vector&lt; double &gt; &gt;&amp; <a class="code" href="keno__main_8cpp.html#a1ee5a9f51d4409ab3968ebd9aa662638">prizes</a> );</div>
+<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;             </div>
+<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="ttc" id="keno__main_8cpp_html_a1ee5a9f51d4409ab3968ebd9aa662638"><div class="ttname"><a href="keno__main_8cpp.html#a1ee5a9f51d4409ab3968ebd9aa662638">prizes</a></div><div class="ttdeci">static std::vector&lt; std::vector&lt; double &gt; &gt; prizes</div><div class="ttdef"><b>Definition:</b> keno_main.cpp:21</div></div>
+<div class="ttc" id="functions_8h_html_a58b93f6e7f2214da9ad86a69bf27fdc3"><div class="ttname"><a href="functions_8h.html#a58b93f6e7f2214da9ad86a69bf27fdc3">quicksort</a></div><div class="ttdeci">void quicksort(std::vector&lt; int &gt; &amp;V, int left, int right)</div><div class="ttdef"><b>Definition:</b> functions.cpp:37</div></div>
+<div class="ttc" id="functions_8h_html_a1abb6c23f3fae207a3cfd02fbf255823"><div class="ttname"><a href="functions_8h.html#a1abb6c23f3fae207a3cfd02fbf255823">game</a></div><div class="ttdeci">void game(KenoBet player, std::vector&lt; std::vector&lt; double &gt; &gt; &amp;prizes)</div><div class="ttdef"><b>Definition:</b> functions.cpp:110</div></div>
+<div class="ttc" id="classes_8h_html"><div class="ttname"><a href="classes_8h.html">classes.h</a></div><div class="ttdoc">Contém a classe KenoBet, responsável pela mecânica do jogo. </div></div>
+<div class="ttc" id="functions_8h_html_aa4996d744d9318c2a71467641b7dae20"><div class="ttname"><a href="functions_8h.html#aa4996d744d9318c2a71467641b7dae20">areAllNumbers</a></div><div class="ttdeci">bool areAllNumbers(std::string str)</div><div class="ttdef"><b>Definition:</b> functions.cpp:19</div></div>
+<div class="ttc" id="class_keno_bet_html"><div class="ttname"><a href="class_keno_bet.html">KenoBet</a></div><div class="ttdef"><b>Definition:</b> classes.h:18</div></div>
+<div class="ttc" id="functions_8h_html_a19ca94df7a3930e28bb7d62b9d985cb2"><div class="ttname"><a href="functions_8h.html#a19ca94df7a3930e28bb7d62b9d985cb2">interface</a></div><div class="ttdeci">void interface(KenoBet player, std::vector&lt; std::vector&lt; double &gt; &gt; prizes)</div><div class="ttdef"><b>Definition:</b> functions.cpp:77</div></div>
+<div class="ttc" id="functions_8h_html_a4a7ce74c324bb8fb10f2de7825e4f582"><div class="ttname"><a href="functions_8h.html#a4a7ce74c324bb8fb10f2de7825e4f582">seed</a></div><div class="ttdeci">int seed(int i)</div><div class="ttdef"><b>Definition:</b> functions.cpp:12</div></div>
+</div><!-- fragment --></div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+Gerado por &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
+</a> 1.8.10
+</small></address>
+</body>
+</html>
