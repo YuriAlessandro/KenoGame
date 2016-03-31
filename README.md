@@ -27,13 +27,13 @@ Após salvar o arquivo (na pasta data), você deverá executar o programa em seu
 terminal da seguinte maneira:
 
 ```Shell
-    ./[Nome do executável] [Nome do arquivo]
+    & ./[Nome do executável] [Nome do arquivo]
 ```
 
 Um exemplo:
 
 ```Shell
-    ./KenoGame myfile.txt
+    & ./KenoGame myfile.txt
 ```
 
 O jogo então será executado, e você poderá conferir como se saiu.
@@ -49,7 +49,7 @@ e a mecânica do jogo.
 Este jogo foi desenvolvido em C++11. Para compilar, faça:
 
 ```Shell
-    g++ -Wall -std=c++11 -I include/ src/keno_main.cpp src/functions.cpp src/classes.cpp -o bin/[nome do arquivo]
+    & g++ -Wall -std=c++11 -I include/ src/keno_main.cpp src/functions.cpp src/classes.cpp -o bin/[nome do arquivo]
 ``` 
 
 ## Documentação
