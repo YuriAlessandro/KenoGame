@@ -83,10 +83,10 @@ public:
     bool readFile( std::string fileName );
 
 private:
-	unsigned int m_maxSpots;      /**< Armazena a quantidade de números apostados.*/
-	std::vector<int> m_spots; /**< Armazena os números escolhidos pelo jogador.*/
-	float m_wage;			      /**< Armazena o dinheiro apostado pelo jogador.*/
-	int m_rounds;			      /**< Armazena o número de rodadas a serem executadas.*/
+	unsigned int m_maxSpots;	/**< Armazena a quantidade de números apostados.*/
+	std::vector<int> m_spots 	/**< Armazena os números escolhidos pelo jogador.*/
+	float m_wage			/**< Armazena o dinheiro apostado pelo jogador.*/
+	int m_rounds;			/**< Armazena o número de rodadas a serem executadas.*/
 
 };
 
